@@ -11,11 +11,11 @@ if (POLICY CMP0042)
 endif ()
 
 option (BUILD_SHARED_LIBS "Build shared libraries" ON)
-option (BUILD_TESTS "Build tests" ON)
+option (BUILD_TESTS "Build tests" OFF)
 
-option (ENABLE_OPENMP "Use OpenMP for multithreading" OFF)
-option (ENABLE_THREADS "Use pthread for multithreading" OFF)
-option (WITH_COMBINED_THREADS "Merge thread library" OFF)
+option (ENABLE_OPENMP "Use OpenMP for multithreading" ON)
+option (ENABLE_THREADS "Use pthread for multithreading" ON)
+option (WITH_COMBINED_THREADS "Merge thread library" ON)
 
 option (ENABLE_FLOAT "single-precision" OFF)
 option (ENABLE_LONG_DOUBLE "long-double precision" OFF)
